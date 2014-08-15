@@ -7,4 +7,96 @@ body
   margin: 0;
   padding: 0;
   .sansFont;
+  color: #fff;
+  overflow-x: hidden;
+
+  // лень в функцию оформлять
+  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #000000), color-stop(0.7, #2F3563), color-stop(1, #505FD1));
+  background-image: -o-linear-gradient(right top, #000000 0%, #2F3563 70%, #505FD1 100%);
+  background-image: -moz-linear-gradient(right top, #000000 0%, #2F3563 70%, #505FD1 100%);
+  background-image: -webkit-linear-gradient(right top, #000000 0%, #2F3563 70%, #505FD1 100%);
+  background-image: -ms-linear-gradient(right top, #000000 0%, #2F3563 70%, #505FD1 100%);
+  background-image: linear-gradient(to right top, #000000 0%, #2F3563 70%, #505FD1 100%);
+  background-attachment: fixed;
+
+  #stars // Звёзды
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+.panel
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  .vertical-center
+  {
+    position: relative;
+  }
+}
+
+.panel:nth-of-type(1) // Первая панель
+{
+  font-size: 150%;
+  font-weight: 100;
+  text-shadow: 0px 0px 1px #fff;
+  text-align: center;
+
+  img
+  {
+    width: 150px;
+    height: 150px;
+  }
+
+  h2
+  {
+    margin-top: -25px;
+    font-weight: normal;
+  }
+}
+
+.panel:nth-of-type(2) // Вторая панель
+{
+  & .vertical-center
+  {
+    width: 100%;
+    text-align: center;
+  }
+
+  .column, .arrow
+  {
+    display: inline-block;
+    height: 60%;
+    text-align: center;
+  }
+
+  .column
+  {
+    width: 25%;
+  }
+
+  .arrow
+  {
+    position: relative;
+    width: 5%;
+    font-size: 750%;
+  }
+
+  h3
+  {
+    font-size: 200%;
+    font-weight: normal;
+  }
+
+  img
+  {
+    width:  350px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.5);
+  }
 }

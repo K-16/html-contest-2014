@@ -26,6 +26,8 @@ elementsInit = -> # нужно название получше
     width: window.innerWidth
     height: window.innerHeight
 
+  $('#date').css 'top', $('.panel:eq(0) .vertical-center').height() / 2
+ 
   drawStars()
   verticalСentering()
 

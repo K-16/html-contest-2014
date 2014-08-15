@@ -57,6 +57,12 @@ body
     margin-top: -25px;
     font-weight: normal;
   }
+
+  #date
+  {
+    position: relative;
+    font-size: 200%;
+  }
 }
 
 .panel:nth-of-type(2) // Вторая панель
@@ -91,12 +97,38 @@ body
     font-size: 200%;
     font-weight: normal;
   }
+}
 
-  img
+.panel:nth-of-type(3) // Вторая панель
+{
+  & .vertical-center
   {
-    width:  350px;
-    height: 300px;
-    border-radius: 5px;
-    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
   }
+
+  p
+  {
+    font-size: 250%;
+
+    a
+    {
+      font-size: 200%;
+      color: #2e44ec;
+
+      &:hover
+      {
+        color: red;
+      }
+    }
+  }
+}
+
+.panel:nth-of-type(2) img,
+.panel:nth-of-type(3) img,
+{
+  width: 350px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.5);
 }
